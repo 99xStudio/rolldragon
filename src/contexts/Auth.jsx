@@ -28,16 +28,12 @@ export function AuthProvider({ children }) {
         listener?.subscription.unsubscribe()
       }
     }, [])
-
-    const usersupabase = user != null ? createClient(import.meta.env.VITE_SUPABASE_URL, session.access_token) : null
   
     // Will be passed down to Signup, Login and Dashboard components
     const value = {
       signUp: (data) => supabase.auth.signUp(data),
       signIn: (data) => supabase.auth.signInWithPassword(data),
       signOut: () => supabase.auth.signOut(),
-      getExtData: () => usersupabase.from("ExtUserData").select("*"),
-      setExtData: (data) => usersupabase.from("ExtUserData"),
       user,
     }
   

@@ -27,13 +27,10 @@ export function Signup() {
   
       // Calls `signUp` function from the context
       const { error } = await signUp({ email, password })
-      const { error2 } = await setExtData({uid:user?.id, firstName: firstname, lastName:lastname, isAdmin:false, dob:dob})
   
       if (error) {
         alert('error signing up: ' + error.message)
-      } else if (error2) {
-        alert('error storing data: ' + error2.message)
-      } else {
+      }  else {
         // Redirect user to Dashboard
         history.push('/')
       }
