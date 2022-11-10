@@ -1,4 +1,4 @@
-import { BrowserRouter, Switch, Route } from 'react-router-dom'
+import { HashRouter, Switch, Route } from 'react-router-dom'
 
 import { Signup } from './Signup'
 import { Login } from './Login'
@@ -16,16 +16,16 @@ function App() {
       <br />
 
       {/* Add routes here👇 */}
-      <BrowserRouter>
-      <AuthProvider>
-          <Switch>
-            <Route exact path="/" component={Home} />
-            <PrivateRoute exact path="/dashboard" component={Dashboard} />
-            <Route path="/signup" component={Signup} />
-            <Route path="/login" component={Login} />
-          </Switch>
-        </AuthProvider>
-      </BrowserRouter>
+      <HashRouter basename='/'>
+        <AuthProvider>
+            <Switch>
+              <Route exact path="/" component={Home} />
+              <PrivateRoute exact path="/dashboard" component={Dashboard} />
+              <Route path="/signup" component={Signup} />
+              <Route path="/login" component={Login} />
+            </Switch>
+          </AuthProvider>
+      </HashRouter>
     </div>
   )
 }
