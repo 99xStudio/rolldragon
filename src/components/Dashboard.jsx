@@ -3,7 +3,7 @@ import { useAuth } from '../contexts/Auth'
 
 export function Dashboard() {
     // Get current user and signOut function from context
-    const { user, signOut } = useAuth()
+    const { user, signOut, displayName } = useAuth()
   
     const history = useHistory()
   
@@ -18,7 +18,7 @@ export function Dashboard() {
     return (
       <div>
         {/* Change it to display the user ID too 👇*/}
-        <p>Welcome, {user?.id}!</p>
+        <p>Welcome, {displayName}!</p>
         <button onClick={handleSignOut}>Sign out</button>
       </div>
     )

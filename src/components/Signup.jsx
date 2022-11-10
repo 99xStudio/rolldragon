@@ -4,14 +4,11 @@ import { useAuth } from '../contexts/Auth'
 import { useHistory } from 'react-router'
 
 export function Signup() {
-    const firstnameRef = useRef()
-    const lastnameRef = useRef()
-    const dobRef = useRef()
     const emailRef = useRef()
     const passwordRef = useRef()
   
     // Get signUp function from the auth context
-    const { signUp, setExtData, user } = useAuth()
+    const { signUp, user } = useAuth()
   
     const history = useHistory()
   
@@ -19,9 +16,6 @@ export function Signup() {
       e.preventDefault()
   
       // Get email and password input values
-      const firstname = firstnameRef.current.value
-      const lastname = lastnameRef.current.value
-      const dob = dobRef.current.value
       const email = emailRef.current.value
       const password = passwordRef.current.value
   
@@ -39,15 +33,6 @@ export function Signup() {
   return (
     <>
       <form onSubmit={handleSubmit}>
-        <label htmlFor='input-firstname'>First name</label>
-        <input id='input-firstname' type="text" ref={firstnameRef}></input>
-
-        <label htmlFor='input-lastname'>Last name</label>
-        <input id='input-lastname' type="text" ref={lastnameRef}></input>
-
-        <label htmlFor='input-dob'>Date of birth</label>
-        <input type="date" id="input-dob" ref={dobRef} />
-
         <label htmlFor="input-email">Email</label>
         <input id="input-email" type="email" ref={emailRef} />
 
