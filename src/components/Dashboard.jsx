@@ -23,6 +23,7 @@ export function Dashboard() {
       await changeDName({
         "name": nameRef.current.value
       })
+      nameRef.current.value = ""
     }
   
     return (
