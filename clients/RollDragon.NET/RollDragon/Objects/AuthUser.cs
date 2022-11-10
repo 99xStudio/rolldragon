@@ -1,6 +1,6 @@
 namespace RollDragon.Objects;
 
-public class User
+public class AuthUser
 {
     public LoginInfo Login;
     public string UserId;
@@ -8,7 +8,7 @@ public class User
     public string Phone;
     public string Role;
 
-    public User(LoginInfo login, string userId, string email, string phone, string role)
+    public AuthUser(LoginInfo login, string userId, string email, string phone, string role)
     {
         Login = login;
         UserId = userId;
