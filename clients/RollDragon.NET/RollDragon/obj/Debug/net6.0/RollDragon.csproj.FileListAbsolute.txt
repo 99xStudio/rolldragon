@@ -1,0 +1,12 @@
+C:\Users\reddust9\rolldragon\clients\RollDragon.NET\RollDragon\bin\Debug\net6.0\RollDragon.deps.json
+C:\Users\reddust9\rolldragon\clients\RollDragon.NET\RollDragon\bin\Debug\net6.0\RollDragon.dll
+C:\Users\reddust9\rolldragon\clients\RollDragon.NET\RollDragon\bin\Debug\net6.0\RollDragon.pdb
+C:\Users\reddust9\rolldragon\clients\RollDragon.NET\RollDragon\obj\Debug\net6.0\RollDragon.csproj.AssemblyReference.cache
+C:\Users\reddust9\rolldragon\clients\RollDragon.NET\RollDragon\obj\Debug\net6.0\RollDragon.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\reddust9\rolldragon\clients\RollDragon.NET\RollDragon\obj\Debug\net6.0\RollDragon.AssemblyInfoInputs.cache
+C:\Users\reddust9\rolldragon\clients\RollDragon.NET\RollDragon\obj\Debug\net6.0\RollDragon.AssemblyInfo.cs
+C:\Users\reddust9\rolldragon\clients\RollDragon.NET\RollDragon\obj\Debug\net6.0\RollDragon.csproj.CoreCompileInputs.cache
+C:\Users\reddust9\rolldragon\clients\RollDragon.NET\RollDragon\obj\Debug\net6.0\RollDragon.dll
+C:\Users\reddust9\rolldragon\clients\RollDragon.NET\RollDragon\obj\Debug\net6.0\refint\RollDragon.dll
+C:\Users\reddust9\rolldragon\clients\RollDragon.NET\RollDragon\obj\Debug\net6.0\RollDragon.pdb
+C:\Users\reddust9\rolldragon\clients\RollDragon.NET\RollDragon\obj\Debug\net6.0\ref\RollDragon.dll
