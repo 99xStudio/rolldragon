@@ -1,5 +1,6 @@
 import { useHistory } from 'react-router'
 import { useAuth } from '../contexts/Auth'
+import "./All.css"
 
 export function Dashboard() {
     // Get current user and signOut function from context
@@ -16,10 +17,12 @@ export function Dashboard() {
     }
   
     return (
-      <div>
-        {/* Change it to display the user ID too 👇*/}
-        <p>Welcome, {displayName}!</p>
-        <button onClick={handleSignOut}>Sign out</button>
-      </div>
+      <>
+        <section className="text-wrap">
+          <p>Welcome, {displayName}!</p>
+        </section>
+        <br />
+        <button className='cool-btn' onClick={handleSignOut}>Sign out</button>
+      </>
     )
   }

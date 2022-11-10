@@ -6,10 +6,13 @@ import { Dashboard } from './Dashboard'
 import { AuthProvider } from '../contexts/Auth'
 import { PrivateRoute } from './PrivateRoute'
 
+import "./All.css"
+
 function App() {
   return (
-    <div>
-      <h1>supabase-auth-react</h1>
+    <div id='div-noflex'>
+      <h1>RollDragon Web</h1>
+      <br />
 
       {/* Add routes here👇 */}
       <BrowserRouter>

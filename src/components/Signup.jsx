@@ -2,6 +2,7 @@ import { useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { useAuth } from '../contexts/Auth'
 import { useHistory } from 'react-router'
+import "./All.css"
 
 export function Signup() {
     const emailRef = useRef()
@@ -33,20 +34,29 @@ export function Signup() {
   return (
     <>
       <form onSubmit={handleSubmit}>
-        <label htmlFor="input-email">Email</label>
-        <input id="input-email" type="email" ref={emailRef} />
+        <section className="input-wrap">
+          <label htmlFor="input-email">Email: </label>
+          <input id="input-email" type="email" ref={emailRef} />
+        </section>
+        <br />
 
-        <label htmlFor="input-password">Password</label>
-        <input id="input-password" type="password" ref={passwordRef} />
+        <section className="input-wrap">
+          <label htmlFor="input-password">Password: </label>
+          <input id="input-password" type="password" ref={passwordRef} />
+        </section>
+        <br />
 
         <br />
 
-        <button type="submit">Sign up</button>
+        <button className='cool-btn' type="submit">Sign up</button>
       </form>
+      <br />
 
-      <p>
-        Already have an account? <Link to="/login">Log In</Link>
-      </p>
+      <section className="text-wrap">
+        <p>
+          Already have an account? <Link to="/login">Log In</Link>
+        </p>
+      </section>
     </>
   )
 }
