@@ -44,7 +44,7 @@ def get_ns_data(user: RD_User) -> RD_UserDataNS:
     json = resp.json()
     if len(json) < 1:
         rd_log("No UserDataNS entry found. Creating now")
-        data = RD_UserDataNS(user.user_id, input("Enter your new display name >> "))
+        data = RD_UserDataNS(user.user_id, "No-name")
         set_ns_data(user.login, data)
         return data
         
