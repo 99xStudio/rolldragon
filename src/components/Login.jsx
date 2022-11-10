@@ -27,7 +27,7 @@ export function Login() {
         alert('error signing in: ' + error.message)
       } else {
         // Redirect user to Dashboard
-        history.push('/')
+        history.push('/dashboard')
       }
     }
 

@@ -27,7 +27,7 @@ export function Signup() {
         alert('error signing up: ' + error.message)
       }  else {
         // Redirect user to Dashboard
-        history.push('/')
+        history.push('/dashboard')
       }
     }
 
